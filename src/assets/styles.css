@@ -1,0 +1,59 @@
+/********************** Main CSS *************/
+
+body {
+    margin: 0;
+}
+
+#topnav {
+    width: 100% !important;
+}
+
+.logobrand {
+    left: 20%;
+    position: relative;
+    width: 70% !important;
+    text-decoration: none;
+}
+
+/******************* Main Section CSS *********/
+
+#mainSection {
+    top: 0px !important;
+    padding: 20px;
+    position: relative !important;
+    width: 100% !important;
+    height: 100vh !important;
+}
+
+@media all and (max-width: 500px) {
+    #mainSection {
+        left: 1px;
+    }
+}
+
+.homeSection {
+    padding: 25px !important;
+    text-align: center;
+    font-size: 50px;
+}
+
+@media all and (max-width: 500px) {
+    .homeSection {
+        padding: 1px;
+    }
+}
+
+#quote {
+    padding-top: 30px;
+    font-size: 32px;
+    font: italic;
+}
+
+.homeSection a {
+    text-decoration: none;
+}
+
+.dialog-bottom-transition-enter-active,
+.dialog-bottom-transition-leave-active {
+    transition: transform .2s ease-in-out;
+}
