@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import ecosystemmenu from './components/ecosystemmenu.vue'
+import ecosystemmenu from '@/components/ecosystemmenu.vue'
 import { useTheme } from 'vuetify'
 
 export default {
@@ -41,7 +41,7 @@ export default {
 
     return {
       theme,
-      toggleTheme: () => theme.global.name.value = theme.global.current.value.light ? 'light' : 'dark'
+      toggleTheme: () => theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
     }
   },
   components: { ecosystemmenu },
