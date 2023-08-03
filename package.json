@@ -10,17 +10,11 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "^6.4.0",
-        "@fortawesome/free-brands-svg-icons": "^6.4.0",
-        "@fortawesome/free-regular-svg-icons": "^6.4.0",
-        "@fortawesome/free-solid-svg-icons": "^6.4.0",
-        "@fortawesome/vue-fontawesome": "^3.0.3",
         "core-js": "^3.8.3",
         "inspirational-quotes": "^2.0.1",
         "register-service-worker": "^1.7.2",
         "vuetify": "latest",
         "vuex": "^4.0.0",
-    "pinia": "^2.1.4",
     "vue": "latest",
     "vue-router": "^4.2.4"
   },
