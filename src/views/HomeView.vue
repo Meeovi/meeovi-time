@@ -5,7 +5,6 @@
         <h1 id="dateTime"></h1>
       </v-col>
       <v-col cols="12">
-        <meta http-equiv="refresh" content="60">
         <p id="quote"></p>
       </v-col>
     </v-row>
@@ -29,9 +28,15 @@ import Quote from "inspirational-quotes";
         const day = new Date().toLocaleString();
 
         document.getElementById("dateTime").innerHTML = name + " " + day;
+
+        document.getElementById("quote").innerHTML = Quote.getRandomQuote();
       }
 
-      document.getElementById("quote").innerHTML = Quote.getRandomQuote();
+      setInterval(quoteTimer, 5000);
+
+      function quoteTimer() {
+        document.getElementById("quote").innerHTML = Quote.getRandomQuote();
+      }
     }
   }
 </script>
