@@ -5,16 +5,17 @@
         <h1 id="dateTime"></h1>
       </v-col>
       <v-col cols="12">
-        <p id="quote"></p>
+        <quote />
       </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
-import Quote from "inspirational-quotes";
+import quote from '../components/quote.vue'
 
   export default {
+    components: { quote },
     mounted() {
       setInterval(myTimer, 1000);
 
@@ -29,12 +30,6 @@ import Quote from "inspirational-quotes";
 
         document.getElementById("dateTime").innerHTML = name + " " + day;
 
-        document.getElementById("quote").innerHTML = Quote.getRandomQuote();
-      }
-
-      setInterval(quoteTimer, 5000);
-
-      function quoteTimer() {
         document.getElementById("quote").innerHTML = Quote.getRandomQuote();
       }
     }
